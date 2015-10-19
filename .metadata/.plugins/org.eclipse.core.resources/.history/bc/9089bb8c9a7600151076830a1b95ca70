@@ -1,0 +1,10 @@
+[INFO] [10-19-2015 20:43:52] log.LogMessage - I AM HERE
+[INFO] [10-19-2015 20:45:51] log.LogMessage - I AM HERE
+[INFO] [10-19-2015 20:45:53] log.LogMessage - I AM HERE
+[INFO] [10-19-2015 20:46:16] log.LogMessage - I AM HERE
+[INFO] [10-19-2015 20:46:47] log.LogMessage - I AM HERE
+[DEBUG] [10-19-2015 20:46:47] log.LogMessage - I AM HERE
+[INFO] [10-19-2015 20:47:02] log.LogMessage - I AM HERE
+[DEBUG] [10-19-2015 20:47:02] log.LogMessage - I AM HERE
+[INFO] [10-19-2015 20:47:24] log.LogMessage - I AM HERE
+[DEBUG] [10-19-2015 20:47:24] log.LogMessage - I AM HERE

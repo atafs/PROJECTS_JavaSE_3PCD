@@ -1,0 +1,86 @@
+package json;
+
+import java.io.IOException;
+
+import org.apache.log4j.Logger;
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
+public class JsonToJavaConverter {
+	
+	//ATTRIBUTE
+    private static Logger logger = Logger.getLogger(JsonToJavaConverter.class);
+    
+    /** */
+    public VerifyValue convertFromJsonToJavaClass(String stringJason) {
+        //converting JSON String to Java object
+    	VerifyValue verifyValue = null;
+    	JsonToJavaConverter converter = new JsonToJavaConverter();
+    	try {
+    		verifyValue = (VerifyValue) converter.fromJson(stringJason);
+		
+        } catch (JsonParseException e) {
+			e.printStackTrace();
+		} catch (JsonMappingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    	
+    	return verifyValue;
+    }
+  
+    /** */
+    public Object fromJson(String stringJason) throws JsonParseException, JsonMappingException, IOException{
+            VerifyValue verifyValue = new ObjectMapper().readValue(stringJason, VerifyValue.class);
+//            logger.info("Java Object created from JSON String ");
+//            logger.info("JSON String : " + stringJason);          
+            return verifyValue;
+    }
+  
+    //DAO
+    /** */
+    public static class VerifyValue{
+            
+    	//ATTRIBUTES
+		private String self;
+		private String value;
+		private String id;
+		
+		//GETTERS AND SETTERS
+		public String getSelf() {
+			return self;
+		}
+
+		public void setSelf(String self) {
+			this.self = self;
+		}
+
+		public String getValue() {
+			return value;
+		}
+
+		public void setValue(String value) {
+			this.value = value;
+		}
+
+		public String getId() {
+			return id;
+		}
+
+		public void setId(String id) {
+			this.id = id;
+		}
+
+		//TOSTRING
+		@Override
+		public String toString() {
+			String toReturn = "";
+			toReturn += "self="+self + " => ";
+			toReturn += "value="+value + " => ";
+			toReturn += "id="+id + ";";
+			return toReturn;
+		}   
+    }
+}
