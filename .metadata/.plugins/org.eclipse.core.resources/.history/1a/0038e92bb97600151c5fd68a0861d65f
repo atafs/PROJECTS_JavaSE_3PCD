@@ -1,6 +1,8 @@
 package swing.client;
 
 import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -27,11 +29,12 @@ public class GUI_tabs_v1_1 extends JFrame {
 	private JTextField textoParaEnviar;
 	private Socket socket;
 	private PrintWriter escritor;
+	private String nome;
 	private JTextArea textoRecebido;
 	private Scanner leitor;
 	
 	//CONSTRUCTOR
-	public GUI_tabs_v1_1(String nome) {
+	public GUI_tabs_v1_1() {
 		super("Chat: " + nome);
 		this.nome = nome;
 		
@@ -48,6 +51,7 @@ public class GUI_tabs_v1_1 extends JFrame {
         
         //PANEL2
         JPanel jp2 = new JPanel();
+        JLabel label2 = new JLabel();
         
         //fonte e botoes/texto
 		Font fonte = new Font("Serif", Font.BOLD, 20);
@@ -77,6 +81,8 @@ public class GUI_tabs_v1_1 extends JFrame {
 		jtp.addTab("CHAT", jp2);
         jtp.addTab("CONTACTS", envio);
       
+        
+
   		//configuracao de rede
   		try {
 			configurarRede();
@@ -84,7 +90,7 @@ public class GUI_tabs_v1_1 extends JFrame {
 			e.printStackTrace();
 		}
   		
-    	setSize(700, 500);
+    	setSize(500, 500);
     	setLocation(200, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
@@ -94,8 +100,8 @@ public class GUI_tabs_v1_1 extends JFrame {
 	//MAIN
     public static void main(String[] args) {   	
     	//INITIALIZE
-    	new GUI_tabs_v1_1("Americo");
-    	new GUI_tabs_v1_1("Tomas");
+    	new GUI_tabs_v1_1();
+    	new GUI_tabs_v1_1();
     }
     
 	//listener

@@ -1,6 +1,8 @@
 package swing.client;
 
 import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -48,6 +50,7 @@ public class GUI_tabs_v1_1 extends JFrame {
         
         //PANEL2
         JPanel jp2 = new JPanel();
+        JLabel label2 = new JLabel();
         
         //fonte e botoes/texto
 		Font fonte = new Font("Serif", Font.BOLD, 20);

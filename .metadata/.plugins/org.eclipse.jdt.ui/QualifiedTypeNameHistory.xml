@@ -3,4 +3,6 @@
 <fullyQualifiedTypeName name="log.LogMessage"/>
 <fullyQualifiedTypeName name="dao.phonebook.list.PhoneBookMap"/>
 <fullyQualifiedTypeName name="dao.phonebook.interfaces.PhoneBook"/>
+<fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+<fullyQualifiedTypeName name="java.awt.GridLayout"/>
 </qualifiedTypeNameHistroy>
