@@ -1,0 +1,19 @@
+package enums;
+
+public enum MensagemEstado {
+	POR_ENVIAR("Mensagem Nao Enviada Ainda..."), ENVIADO("Mensagem Enviada!!");
+	
+	// ATTRIBUTES
+	private final String text;
+
+	// CONSTRUCTOR
+	private MensagemEstado(final String text) {
+		this.text = text;
+	}
+	
+	// TOSTRING
+	@Override
+	public String toString() {
+		return text;
+	}
+}

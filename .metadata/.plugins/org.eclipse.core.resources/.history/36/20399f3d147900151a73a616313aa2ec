@@ -1,0 +1,22 @@
+package enums;
+
+public enum EstadoDaApp {
+	
+	POR_ENVIAR("potenciaMaxima"), ENVIADO("potencia");
+	
+	// ATTRIBUTES
+	private final String text;
+
+	// CONSTRUCTOR
+	private EstadoDaApp(final String text) {
+		this.text = text;
+	}
+	
+	// TOSTRING
+	@Override
+	public String toString() {
+		return text;
+	}
+	
+
+}

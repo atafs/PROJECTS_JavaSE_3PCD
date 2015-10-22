@@ -1,0 +1,19 @@
+package enums;
+
+public enum ServidorEstado {
+	POR_ENVIAR("potenciaMaxima"), ENVIADO("potencia");
+	
+	// ATTRIBUTES
+	private final String text;
+
+	// CONSTRUCTOR
+	private ServidorEstado(final String text) {
+		this.text = text;
+	}
+	
+	// TOSTRING
+	@Override
+	public String toString() {
+		return text;
+	}
+}

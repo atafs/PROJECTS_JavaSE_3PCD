@@ -1,0 +1,164 @@
+package enums;
+
+public enum MensagemEstado {
+	POR_ENVIAR("Mensagem Nao Enviada Ainda..."), ENVIADO("Mensagem Enviada!!");
+	
+	// ATTRIBUTES
+	private final String text;
+
+	// CONSTRUCTOR
+	private MensagemEstado(final String text) {
+		this.text = text;
+	}
+	
+	// TOSTRING
+	@Override
+	public String toString() {
+		return text;
+	}
+	
+	//OTHER METHODS
+	public static Ligavel selecionaAccaoMensagem(MensagemEstado estado) {
+
+		//JSONObject attributes
+		String tipo = (String) obj.get("tipo");
+		String id = (String) obj.get("id");
+		double potencia = selecionaNovoAparelhoPotencia(obj);
+		
+		
+		// .toUpperCase() lets you select type and still match
+		String tipoUpperCase = tipo.toUpperCase();
+		try {
+			// Enum.valueOf() throws an exception if the input is not valid
+			Ligavel_Tipo novo = Ligavel_Tipo.valueOf(tipoUpperCase);
+
+			switch (novo) {
+			case LAMPADAVARIAVEL:
+				LampadaVariavel lampadaVariavel = new LampadaVariavel(id, potencia);	
+				lampadaVariavel.setEstadoAparelho(LigavelEstado.DESLIGA);
+				lampadaVariavel.setTipoAparelho(novo);
+				//POTENCIA MAXIMA DO APARELHO
+				lampadaVariavel.setPotenciaMaxima(potencia);
+				//POTENCIA INICIAL DO APARELHO (50% DA POTENCIA MAXIMA)
+				
+
+				double temp = (double)(int)(Math.random()*potencia);
+				lampadaVariavel.setPotenciaActual(temp);
+				//APESAR DE O JSON REFERIR A POTENCIA_MAXIMA, ESTE APARELHO E DE POTENCIA VARIAVEL
+				lampadaVariavel.setPotenciaAparelho(Ligavel_Potencia.POTENCIA);
+				
+				listAparelhos.add(lampadaVariavel);
+				return lampadaVariavel;
+				
+			case MAQLAVARROUPA:
+				MaquinaLavarRoupa maqLavarRoupa = new MaquinaLavarRoupa(id, potencia);
+				
+				// NOVO PROGRAMA
+				JSONArray programas = (JSONArray) obj.get("programas");
+				for(Object object: programas) {
+					JSONObject obj1 = (JSONObject) object;
+					
+					//ADDICIONA 
+					String id1 = (String)obj1.get("id");
+					Programa programa = new Programa(id1);
+					
+					JSONArray ciclos = (JSONArray) obj1.get("ciclos");
+					
+					// NOVO CICLO
+					for (Object object1 : ciclos) {
+						JSONObject obj2 = (JSONObject) object1;
+						
+						int duracao = (int)(long)obj2.get("duracao");
+						double potencia2 = (double)obj2.get("potencia");
+						
+						//ADDICIONA 
+						Ciclo ciclo = new Ciclo(duracao, potencia2);
+						programa.getCiclos().add(ciclo);
+					}
+					maqLavarRoupa.getProgramas().add(programa);
+				}
+				
+//				//TO DELETE
+//				 System.out.println("----------------PRINT_08_PROGRAMA------------------");
+//				 for (Programa programa : maqLavarRoupa.getProgramas()) {
+//					 System.err.println(programa.toString());
+//				 }
+				
+				maqLavarRoupa.setEstadoAparelho(LigavelEstado.DESLIGA);
+				maqLavarRoupa.setTipoAparelho(novo);
+				maqLavarRoupa.setPotenciaAparelho(Ligavel_Potencia.POTENCIA);
+				
+				listAparelhos.add(maqLavarRoupa);
+				return maqLavarRoupa;
+				
+			case TRIPLA:
+				int nTomadas = (int)(long) obj.get("nTomadas");
+				Tripla tripla = new Tripla(id, potencia, nTomadas);
+				tripla.setEstadoAparelho(LigavelEstado.DESLIGA);
+				tripla.setTipoAparelho(novo);
+				tripla.setPotenciaAparelho(novoAparelhoPotencia);
+				
+				listTriplas.add(tripla);
+				return tripla;
+			
+			case COMPUTADOR:
+				Computador computador = new Computador(id, (double)(int)Math.random()*potencia);
+				computador.setEstadoAparelho(LigavelEstado.DESLIGA);
+				computador.setTipoAparelho(novo);
+				computador.setPotenciaActual(potencia);
+				computador.setPotenciaMaxima(potencia);
+				computador.setPotenciaAparelho(Ligavel_Potencia.POTENCIA);
+				
+				listAparelhos.add(computador);
+				return computador;
+				
+			case FRIGORIFICO:
+				Frigorifico frigorifico = new Frigorifico(id, potencia);
+				frigorifico.setEstadoAparelho(LigavelEstado.DESLIGA);
+				frigorifico.setTipoAparelho(novo);
+				frigorifico.setPotenciaActual(potencia);
+				frigorifico.setPotenciaAparelho(novoAparelhoPotencia);
+				
+				listAparelhos.add(frigorifico);
+				return frigorifico;
+				
+			case LAMPADA:
+				Lampada lampada = new Lampada(id, potencia);
+				lampada.setEstadoAparelho(LigavelEstado.DESLIGA);
+				lampada.setTipoAparelho(novo);
+				lampada.setPotenciaActual(potencia);
+				lampada.setPotenciaAparelho(novoAparelhoPotencia);
+				
+				listAparelhos.add(lampada);
+				return lampada;
+				
+			case MICROONDAS:
+				MicroOndas microOndas =  new MicroOndas(id, potencia);
+				microOndas.setEstadoAparelho(LigavelEstado.DESLIGA);
+				microOndas.setTipoAparelho(novo);
+				microOndas.setPotenciaActual(potencia);
+				microOndas.setPotenciaAparelho(novoAparelhoPotencia);
+				
+				listAparelhos.add(microOndas);
+				return microOndas;
+				
+			case TORRADEIRA:
+				Torradeira torradeira = new Torradeira(id, potencia);
+				torradeira.setEstadoAparelho(LigavelEstado.DESLIGA);
+				torradeira.setTipoAparelho(novo);
+				torradeira.setPotenciaActual(potencia);
+				torradeira.setPotenciaAparelho(novoAparelhoPotencia);
+				
+				listAparelhos.add(torradeira);
+				return torradeira;
+				
+			case OTHERS:
+				return null;
+			}
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+			//System.out.println("Invalid color selection!");
+		}
+		return null;
+	}
+}
