@@ -1,5 +1,5 @@
 package interfaces;
 
-public enum MensagemInterface {
+public interface MensagemInterface {
 
 }

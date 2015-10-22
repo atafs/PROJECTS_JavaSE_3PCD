@@ -1,6 +1,6 @@
 package enums;
 
-import interfaces.MensagemInterface;
+import log.LogMessage;
 
 public enum MensagemEstado {
 	// CONSTANTS
@@ -8,6 +8,7 @@ public enum MensagemEstado {
 	
 	// ATTRIBUTES
 	private final String text;
+	private static LogMessage logger = new LogMessage();
 
 	// CONSTRUCTOR
 	private MensagemEstado(final String text) {
@@ -20,9 +21,8 @@ public enum MensagemEstado {
 		return text;
 	}
 	
-	// OTHER METHODS
-	/** */
-	public static MensagemInterface selecionaAccaoMensagem(MensagemEstado estado) {
+	/** SELECT ACTION */
+	public static void selecionaAccaoMensagem(MensagemEstado estado) {
 		try {
 			switch (estado) {
 			case POR_ENVIAR:
@@ -34,11 +34,10 @@ public enum MensagemEstado {
 				break;
 
 			default:
-				return null;
+				logger.getLog().info("THE APP WENT TO DEFAUT VALUE IN MENSAGEM_ESTADO...");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return null;
 	}
 }

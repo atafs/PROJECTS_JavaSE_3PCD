@@ -1,5 +1,5 @@
 package interfaces;
 
-public enum ServidorInterface {
+public interface ServidorInterface {
 
 }

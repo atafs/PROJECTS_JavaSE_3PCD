@@ -1,0 +1,44 @@
+package enums;
+
+import interfaces.ClienteInterface;
+import interfaces.ServidorInterface;
+
+public enum ServidorEstado {
+	LIGADO("Ligado - OnLine"), DESLIGADO("Desligado - OffLine");
+	
+	// ATTRIBUTES
+	private final String text;
+
+	// CONSTRUCTOR
+	private ServidorEstado(final String text) {
+		this.text = text;
+	}
+	
+	// TOSTRING
+	@Override
+	public String toString() {
+		return text;
+	}
+	
+	// OTHER METHODS
+	/** */
+	public static ServidorInterface selecionaAccaoMensagem(ServidorEstado estado) {
+		try {
+			switch (estado) {
+			case LIGADO:
+				//...
+				break;
+					
+			case DESLIGADO:
+				//...
+				break;
+
+			default:
+				return null;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+}

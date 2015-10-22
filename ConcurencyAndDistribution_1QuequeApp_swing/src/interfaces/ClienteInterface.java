@@ -1,5 +1,5 @@
 package interfaces;
 
-public enum ClienteInterface {
+public interface ClienteInterface {
 
 }
