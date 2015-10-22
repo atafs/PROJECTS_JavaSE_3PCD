@@ -14,5 +14,18 @@ public class Main {
 		System.out.println("SERVER-CLIENT APP");
 		logger.getLog().info("SERVER-CLIENT APP");
 		logger.getLog().debug("SERVER-CLIENT APP");
+		
+		System.err.println("STARTING THE SERVER...");
+		//START SERVER
+		new Server();
+		
+		//START CLIENTS
+		try {
+			new Client("Americo");
+			new Client("Tomas");
+			new Client("Ana");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

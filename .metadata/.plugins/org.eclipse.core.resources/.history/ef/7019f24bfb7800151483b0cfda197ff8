@@ -61,9 +61,6 @@ public class Server {
 	
 	//main
 	public static void main(String[] args) {
-		System.err.println("STARTING THE SERVER...");
-		
-		//START SERVER
 		new Server();
 	}
 }
