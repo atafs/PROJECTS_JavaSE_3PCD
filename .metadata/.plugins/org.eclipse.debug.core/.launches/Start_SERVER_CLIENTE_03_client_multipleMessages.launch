@@ -6,6 +6,6 @@
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="swing.backup.Start_SERVER_CLIENTE_03_client_multipleMessages"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="gui.backup.Start_SERVER_CLIENTE_03_client_multipleMessages"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ConcurencyAndDistribution_1QuequeApp_swing"/>
 </launchConfiguration>

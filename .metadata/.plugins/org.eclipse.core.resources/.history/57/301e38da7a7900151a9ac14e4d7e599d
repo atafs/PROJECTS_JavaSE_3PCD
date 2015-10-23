@@ -1,0 +1,5 @@
+package enums.state.db;
+
+public enum DataBase {
+
+}

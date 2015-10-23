@@ -1,0 +1,154 @@
+1445282555187	Delete element
+1445282582270	Move compilation unit
+1445282745484	Delete elements
+1445283626351	Copy package
+1445283632836	Copy package
+1445283639514	Copy compilation unit
+1445283643887	Copy package
+1445283652298	Delete element
+1445283654271	Delete element
+1445283656651	Delete element
+1445283660925	Delete element
+1445283663810	Copy package
+1445283682663	Delete elements
+1445283686130	Delete element
+1445283691429	Delete element
+1445283714597	Copy package
+1445283718616	Delete element
+1445283746190	Copy package
+1445283749205	Delete element
+1445283756982	Copy package
+1445283762039	Delete element
+1445283774253	Delete element
+1445284186284	Delete element
+1445284220012	Delete element
+1445285514601	Rename package 'dao.colection_compare_to'
+1445285567731	Move compilation unit
+1445285579922	Delete element
+1445285624940	Delete element
+1445285634945	Move compilation unit
+1445285648203	Rename type 'Teste'
+1445285746119	Delete element
+1445285767253	Copy packages
+1445285775368	Delete elements
+1445285803242	Rename package 'dao.compare'
+1445285822497	Move compilation units
+1445286533968	Copy compilation unit
+1445286543499	Rename package 'dao.phonebook.test'
+1445286557053	Move compilation unit
+1445290958736	Delete element
+1445291120865	Rename resource 'Start_SERVER_CLIENTE_04_client_multipleMessagesJTextArea - Copy.java'
+1445291302115	Delete element
+1445291306291	Move compilation unit
+1445291309993	Move compilation unit
+1445291659054	Delete elements
+1445291717407	Copy compilation unit
+1445291721603	Copy compilation unit
+1445291748464	Copy package
+1445291997362	Delete element
+1445292153103	Delete element
+1445292511379	Rename package 'swing.test'
+1445292537856	Rename type 'GUI_tabs'
+1445292641369	Copy compilation unit
+1445296183574	Copy compilation unit
+1445296187662	Copy compilation unit
+1445296191290	Delete element
+1445545458888	Rename package 'swing.gui'
+1445555994050	Delete element
+1445556354650	Rename type 'EstadoDaApp'
+1445556396686	Copy compilation unit
+1445556402528	Copy compilation unit
+1445556666778	Delete element
+1445557408103	Copy compilation unit
+1445557416228	Copy compilation unit
+1445557751487	Copy compilation unit
+1445557767936	Copy compilation unit
+1445559409738	Delete element
+1445559430888	Delete element
+1445559432802	Delete element
+1445559435208	Delete element
+1445559437181	Delete element
+1445559456307	Delete element
+1445559458466	Delete element
+1445559478303	Delete element
+1445559584939	Rename package 'io.excel'
+1445559799467	Delete element
+1445560871517	Delete element
+1445561084560	Delete element
+1445561087310	Copy compilation unit
+1445562154696	Rename local variable 'line'
+1445564671494	Delete element
+1445564673728	Copy compilation unit
+1445564678355	Delete element
+1445564690972	Delete element
+1445564884629	Delete element
+1445597821551	Rename type 'Reader_txt'
+1445597835783	Rename type 'Writer_txt'
+1445597850328	Rename package 'io.txt'
+1445597988721	Rename type 'ClienteEstado'
+1445597997431	Rename type 'ContactoEstado'
+1445598007671	Rename type 'DataBaseEstado'
+1445598016601	Rename type 'MensagemEstado'
+1445598025920	Rename type 'ServidorEstado'
+1445598144114	Copy files
+1445598154975	Copy packages
+1445598362988	Rename package 'db.reader'
+1445598373829	Rename package 'retrieve'
+1445598417902	Delete element
+1445598432693	Delete element
+1445598443884	Delete element
+1445598531099	Delete element
+1445598539379	Rename package 'db.retrieve'
+1445598548676	Rename package 'db.writer'
+1445598562176	Rename package 'db.read'
+1445598573591	Rename package 'db.write'
+1445598614601	Rename package 'db.create'
+1445598622617	Rename package 'db.retrieve'
+1445598631089	Rename package 'db.update'
+1445598638589	Rename package 'db.delete'
+1445598645909	Delete element
+1445598677504	Rename package 'db.io'
+1445598687978	Rename package 'db.test'
+1445598698881	Rename package 'test'
+1445599822275	Rename type 'ClienteInterface'
+1445599827041	Delete element
+1445599833976	Move compilation unit
+1445599842819	Rename type 'ContactoInterface'
+1445599854656	Move compilation unit
+1445599868278	Delete element
+1445599872202	Move compilation unit
+1445599884638	Rename type 'DataBaseInterface'
+1445599894415	Copy compilation unit
+1445599937032	Rename type 'CreateInterface'
+1445599945339	Rename type 'RetrieveInterface'
+1445599952229	Rename type 'UpdateInterface'
+1445599968782	Delete element
+1445599971669	Move compilation unit
+1445599978814	Rename type 'ServidorInterface'
+1445599994789	Delete element
+1445599998391	Move compilation unit
+1445600008103	Rename type 'MensagemInterface'
+1445600026380	Move compilation unit
+1445600033769	Rename type 'ContactInterface'
+1445600054706	Rename type 'ClientInterface'
+1445600104254	Rename type 'MensagemState'
+1445600112060	Rename type 'ServidorState'
+1445600156052	Delete element
+1445600218593	Rename package 'enums.state.client.db'
+1445600226247	Rename package 'enums.state.bd'
+1445600245905	Move compilation unit
+1445600249291	Move compilation unit
+1445600266125	Move compilation unit
+1445600280770	Move compilation unit
+1445600283456	Move compilation unit
+1445600308599	Rename type 'ClientState'
+1445600314578	Rename type 'ContactState'
+1445600319898	Rename type 'MessageState'
+1445600329120	Rename type 'DataBaseState'
+1445600335665	Rename type 'ServerState'
+1445600692522	Delete element
+1445601495416	Delete element
+1445601632427	Copy folders
+1445602161456	Rename package 'swing'
+1445603301564	Rename type 'GUI_tabs_v1_1'
+1445603345192	Rename package 'gui.listeners'
