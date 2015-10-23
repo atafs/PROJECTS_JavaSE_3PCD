@@ -34,8 +34,6 @@ public enum ClienteEstado {
 
 			default:
 				logger.getLog().info("THE APP WENT TO DEFAUT VALUE IN CLIENTE_ESTADO...");
-			
-			
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
