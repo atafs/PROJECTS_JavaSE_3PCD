@@ -1,7 +1,5 @@
 package main;
 
-import swing.backup.Client;
-import swing.server.Server;
 import log.LogMessage;
 
 public class Main {

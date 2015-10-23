@@ -1,0 +1,29 @@
+package io.txt.reader;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Reader_txt {
+	
+	/** */
+	public void readFromTxt() throws IOException{
+		FileReader fr = null;
+		try {
+			File file = new File(".//message//txt//contactTEST.txt");
+		    file.createNewFile();
+		    fr = new FileReader(file); 
+		    char a[] = new char[50];
+		    fr.read(a);
+		    int i = 0;
+		    while(fr.read(a) != -1) {		    	
+		    	System.out.print(a[i]); 
+		    	i++;
+		    }	
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			fr.close();
+		}
+	}
+}

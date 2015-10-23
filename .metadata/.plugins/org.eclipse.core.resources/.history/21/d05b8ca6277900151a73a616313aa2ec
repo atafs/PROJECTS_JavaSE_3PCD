@@ -1,0 +1,19 @@
+package io.txt.writer.test;
+
+import io.txt.writer.Writer_txt;
+
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//INSTANTIATE AND PRINT TO TXT
+		Writer_txt writer = new Writer_txt();
+		try {
+			writer.writeToTxt();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}
