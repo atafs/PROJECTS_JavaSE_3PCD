@@ -82,3 +82,31 @@
 1445564678355	Delete element
 1445564690972	Delete element
 1445564884629	Delete element
+1445597821551	Rename type 'Reader_txt'
+1445597835783	Rename type 'Writer_txt'
+1445597850328	Rename package 'io.txt'
+1445597988721	Rename type 'ClienteEstado'
+1445597997431	Rename type 'ContactoEstado'
+1445598007671	Rename type 'DataBaseEstado'
+1445598016601	Rename type 'MensagemEstado'
+1445598025920	Rename type 'ServidorEstado'
+1445598144114	Copy files
+1445598154975	Copy packages
+1445598362988	Rename package 'db.reader'
+1445598373829	Rename package 'retrieve'
+1445598417902	Delete element
+1445598432693	Delete element
+1445598443884	Delete element
+1445598531099	Delete element
+1445598539379	Rename package 'db.retrieve'
+1445598548676	Rename package 'db.writer'
+1445598562176	Rename package 'db.read'
+1445598573591	Rename package 'db.write'
+1445598614601	Rename package 'db.create'
+1445598622617	Rename package 'db.retrieve'
+1445598631089	Rename package 'db.update'
+1445598638589	Rename package 'db.delete'
+1445598645909	Delete element
+1445598677504	Rename package 'db.io'
+1445598687978	Rename package 'db.test'
+1445598698881	Rename package 'test'
